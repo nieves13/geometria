@@ -7,6 +7,9 @@ public class Circulo_NAC extends FiguraGeometrica_NAC {
 	public Circulo_NAC(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		if (radio < 0) {
+			radio *= -1;
+		}
 	}
 
 	@Override
